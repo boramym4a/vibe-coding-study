@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.addEventListener('animationend', function() {
-            this.style.animation = '';
+            this.style.animation = 'none';
         });
     });
 });
