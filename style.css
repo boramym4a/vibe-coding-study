@@ -80,6 +80,11 @@ a {
 
 a:hover {
     background-color: #f0f0f0;
+    color: black;
+}
+
+button:not(.theme-toggle):hover {
+    filter: brightness(0.9);
 }
 
 .nav-container {
