@@ -75,12 +75,13 @@ a {
     color: black;
     padding: 10px 20px;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 a:hover {
     background-color: #f0f0f0;
     color: black;
+    transform: scale(1.05);
 }
 
 button:not(.theme-toggle):hover {
@@ -145,6 +146,7 @@ body.light-mode a {
 body.light-mode a:hover {
     background-color: #333;
     color: white;
+    transform: scale(1.05);
 }
 
 body.light-mode .project-card {
