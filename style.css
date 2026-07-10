@@ -65,3 +65,79 @@ button {
 button:hover {
     background-color: #f0f0f0;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-container {
+    margin: 40px 0;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.project-card {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.project-category {
+    font-size: 12px;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+body.light-mode .project-card {
+    background-color: white;
+    color: black;
+}
+
+body.light-mode .project-category {
+    background-color: #e0e0e0;
+    color: #333;
+}
