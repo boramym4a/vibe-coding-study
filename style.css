@@ -137,6 +137,16 @@ button:not(.theme-toggle):hover {
     line-height: 1.6;
 }
 
+body.light-mode a {
+    background-color: #111111;
+    color: white;
+}
+
+body.light-mode a:hover {
+    background-color: #333;
+    color: white;
+}
+
 body.light-mode .project-card {
     background-color: white;
     color: black;
