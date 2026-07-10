@@ -186,3 +186,58 @@ body.light-mode .project-category {
     background-color: #e0e0e0;
     color: #333;
 }
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin: 30px auto;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .project-category {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .project-description {
+        font-size: 13px;
+    }
+
+    .nav-container {
+        margin: 20px 0;
+    }
+
+    a {
+        margin: 5px;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
