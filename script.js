@@ -26,4 +26,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (toggleBtn) {
         toggleBtn.classList.remove('active');
     }
+
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        card.addEventListener('animationend', function() {
+            this.style.animation = '';
+        });
+    });
 });
