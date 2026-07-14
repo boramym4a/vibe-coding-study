@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vibe Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()"></button>
+
+    <h1>Contact Us</h1>
+    <p>문의사항이 있으신가요? 아래 폼을 작성해주세요. 빠르게 연락드리겠습니다.</p>
+
+    <form>
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">문의 내용</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">제출</button>
+    </form>
+
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="works.html">Our Works</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
