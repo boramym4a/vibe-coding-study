@@ -144,7 +144,7 @@ button:not(.theme-toggle):hover {
     box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: fadeIn 0.6s ease-out both;
 }
 
 .project-card:nth-child(1) {
