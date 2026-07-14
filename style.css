@@ -1,3 +1,29 @@
+:root {
+    --bg-primary: #111111;
+    --text-primary: white;
+    --btn-bg: white;
+    --btn-text: black;
+    --btn-hover-bg: #f0f0f0;
+    --card-bg: white;
+    --card-text: black;
+    --category-bg: #e0e0e0;
+    --category-text: #333;
+    --text-secondary: #666;
+    --toggle-bg: #ccc;
+    --toggle-active-bg: #4CAF50;
+    --toggle-slider: white;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+body.light-mode {
+    --bg-primary: white;
+    --text-primary: black;
+    --btn-bg: #111111;
+    --btn-text: white;
+    --btn-hover-bg: #333;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -10,8 +36,8 @@
 }
 
 body {
-    background-color: #111111;
-    color: white;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     text-align: center;
     font-family: Arial, sans-serif;
     padding: 50px;
@@ -24,7 +50,7 @@ body {
     right: 20px;
     width: 32px;
     height: 20px;
-    background-color: #ccc;
+    background-color: var(--toggle-bg);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -37,14 +63,14 @@ body {
 }
 
 .theme-toggle.active {
-    background-color: #4CAF50;
+    background-color: var(--toggle-active-bg);
 }
 
 .theme-toggle::before {
     content: '';
     width: 16px;
     height: 16px;
-    background-color: white;
+    background-color: var(--toggle-slider);
     border-radius: 50%;
     margin: 2px;
     transition: transform 0.3s ease;
@@ -63,8 +89,8 @@ p {
 }
 
 button {
-    background-color: white;
-    color: black;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
     border: none;
     border-radius: 8px;
     padding: 10px 20px;
@@ -74,24 +100,23 @@ button {
 }
 
 button:hover {
-    background-color: #f0f0f0;
+    background-color: var(--btn-hover-bg);
 }
 
 a {
-    color: white;
     text-decoration: none;
     margin: 10px;
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
     padding: 10px 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 a:hover {
-    background-color: #f0f0f0;
-    color: black;
+    background-color: var(--btn-hover-bg);
+    color: var(--btn-text);
     transform: scale(1.05);
 }
 
@@ -112,11 +137,11 @@ button:not(.theme-toggle):hover {
 }
 
 .project-card {
-    background-color: white;
-    color: black;
+    background-color: var(--card-bg);
+    color: var(--card-text);
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
     animation: fadeIn 0.6s ease-out forwards;
@@ -140,20 +165,20 @@ button:not(.theme-toggle):hover {
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--shadow-md);
 }
 
 .project-title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: black;
+    color: var(--card-text);
 }
 
 .project-category {
     font-size: 12px;
-    background-color: #e0e0e0;
-    color: #333;
+    background-color: var(--category-bg);
+    color: var(--category-text);
     padding: 5px 10px;
     border-radius: 4px;
     display: inline-block;
@@ -162,30 +187,10 @@ button:not(.theme-toggle):hover {
 
 .project-description {
     font-size: 14px;
-    color: #666;
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
-body.light-mode a {
-    background-color: #111111;
-    color: white;
-}
-
-body.light-mode a:hover {
-    background-color: #333;
-    color: white;
-    transform: scale(1.05);
-}
-
-body.light-mode .project-card {
-    background-color: white;
-    color: black;
-}
-
-body.light-mode .project-category {
-    background-color: #e0e0e0;
-    color: #333;
-}
 
 @media (max-width: 768px) {
     .projects-container {
