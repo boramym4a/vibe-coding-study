@@ -28,6 +28,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    if (hamburgerBtn && navMenu) {
+        hamburgerBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+
+            if (navMenu.classList.contains('active')) {
+                hamburgerBtn.textContent = '✕';
+            } else {
+                hamburgerBtn.textContent = '☰';
+            }
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                hamburgerBtn.textContent = '☰';
+            });
+        });
+    }
+
     const form = document.querySelector('form');
     if (form) {
         form.addEventListener('submit', function(e) {

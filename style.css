@@ -124,8 +124,26 @@ button:not(.theme-toggle):hover {
     filter: brightness(0.9);
 }
 
+.hamburger {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+    color: var(--btn-hover-bg);
+}
+
 .nav-container {
     margin: 40px 0;
+    display: flex;
+    flex-direction: row;
 }
 
 .projects-container {
@@ -258,6 +276,36 @@ form button[type="submit"]:hover {
 @media (max-width: 480px) {
     body {
         padding: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        right: 20px;
+        background-color: var(--bg-primary);
+        border: 1px solid var(--category-bg);
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav-container a {
+        margin: 8px 0;
+        padding: 10px;
+        text-align: center;
+        border-radius: 4px;
     }
 
     h1 {
