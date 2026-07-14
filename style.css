@@ -141,9 +141,17 @@ button:not(.theme-toggle):hover {
 }
 
 .nav-container {
+    width: 100%;
     margin: 40px 0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav-container a {
+    display: block;
 }
 
 .projects-container {
