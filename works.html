@@ -14,8 +14,9 @@
 
     <button class="hamburger" id="hamburger-btn">☰</button>
 
-    <div class="projects-container">
-        <div class="project-card">
+    <div class="projects-container" id="projects-container">
+        <!-- 페이지 1 (카드 1-4) -->
+        <div class="project-card" data-page="1">
             <div class="project-title">Fashion Brand Website</div>
             <div class="project-category">Web Design</div>
             <div class="project-description">
@@ -23,7 +24,7 @@
             </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-page="1">
             <div class="project-title">E-Commerce Platform</div>
             <div class="project-category">Full Stack Development</div>
             <div class="project-description">
@@ -31,7 +32,7 @@
             </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-page="1">
             <div class="project-title">Corporate Branding</div>
             <div class="project-category">Brand Identity</div>
             <div class="project-description">
@@ -39,13 +40,53 @@
             </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-page="1">
             <div class="project-title">Mobile App Design</div>
             <div class="project-category">UI/UX Design</div>
             <div class="project-description">
                 사용자 친화적인 모바일 애플리케이션 디자인. 사용자 리서치 기반의 정보 아키텍처와 직관적인 인터페이스로 높은 만족도를 달성했습니다.
             </div>
         </div>
+
+        <!-- 페이지 2 (카드 5-8) -->
+        <div class="project-card" data-page="2">
+            <div class="project-title">Restaurant Management System</div>
+            <div class="project-category">Backend Development</div>
+            <div class="project-description">
+                실시간 예약 관리, 주문 시스템, 테이블 상태 추적 등 다양한 기능을 갖춘 식당 관리 플랫폼. 직관적인 대시보드와 안정적인 데이터 처리를 구현했습니다.
+            </div>
+        </div>
+
+        <div class="project-card" data-page="2">
+            <div class="project-title">SaaS Analytics Dashboard</div>
+            <div class="project-category">Data Visualization</div>
+            <div class="project-description">
+                사용자 행동 분석, 실시간 통계, 커스텀 리포트 생성 기능이 포함된 고급 분석 대시보드. 복잡한 데이터를 직관적으로 시각화했습니다.
+            </div>
+        </div>
+
+        <div class="project-card" data-page="2">
+            <div class="project-title">Fitness Tracking App</div>
+            <div class="project-category">Mobile App</div>
+            <div class="project-description">
+                운동 기록, 칼로리 추적, AI 기반 코치 기능을 통해 사용자의 건강 목표 달성을 지원합니다. 게임화 요소로 사용자 참여도를 높였습니다.
+            </div>
+        </div>
+
+        <div class="project-card" data-page="2">
+            <div class="project-title">Smart Home Control Platform</div>
+            <div class="project-category">IoT Integration</div>
+            <div class="project-description">
+                여러 스마트 기기를 통합 제어하는 플랫폼으로 에너지 효율성과 편의성을 극대화합니다. 음성 제어와 자동화 스케줄 기능을 지원합니다.
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination">
+        <button class="pagination-btn" id="prev-btn">이전</button>
+        <button class="pagination-number active" data-page="1">1</button>
+        <button class="pagination-number" data-page="2">2</button>
+        <button class="pagination-btn" id="next-btn">다음</button>
     </div>
 
     <div class="nav-container" id="nav-menu">

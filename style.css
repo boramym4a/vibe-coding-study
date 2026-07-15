@@ -172,6 +172,55 @@ button:not(.theme-toggle):hover {
     max-width: 1200px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 60px 0 40px 0;
+}
+
+.pagination-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: var(--btn-hover-bg);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-number {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--btn-bg);
+    background-color: transparent;
+    color: var(--btn-text);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.pagination-number:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+.pagination-number.active {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    font-weight: bold;
+}
+
 .project-card {
     background-color: var(--card-bg);
     color: var(--card-text);
@@ -289,6 +338,24 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background-color: var(--btn-hover-bg);
+}
+
+@media (max-width: 768px) {
+    .pagination {
+        gap: 12px;
+        margin: 50px 0 30px 0;
+    }
+
+    .pagination-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .pagination-number {
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 480px) {

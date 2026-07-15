@@ -51,6 +51,55 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    let currentPage = 1;
+
+    function showPage(page) {
+        currentPage = page;
+
+        projectCards.forEach(card => {
+            if (parseInt(card.dataset.page) === page) {
+                card.style.display = 'block';
+                card.style.animation = 'none';
+                void card.offsetWidth;
+                card.style.animation = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        updatePaginationButtons();
+    }
+
+    function updatePaginationButtons() {
+        document.querySelectorAll('.pagination-number').forEach(btn => {
+            btn.classList.toggle('active', parseInt(btn.dataset.page) === currentPage);
+        });
+
+        document.getElementById('prev-btn').disabled = currentPage === 1;
+        document.getElementById('next-btn').disabled = currentPage === 2;
+    }
+
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) showPage(currentPage - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < 2) showPage(currentPage + 1);
+        });
+
+        document.querySelectorAll('.pagination-number').forEach(btn => {
+            btn.addEventListener('click', () => {
+                showPage(parseInt(btn.dataset.page));
+            });
+        });
+
+        showPage(1);
+    }
+
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const navMenu = document.getElementById('nav-menu');
 
