@@ -232,20 +232,36 @@ button:not(.theme-toggle):hover {
     animation: fadeIn 0.6s ease-out both;
 }
 
-.project-card:nth-child(1) {
+.project-card:nth-child(8n+1) {
     animation-delay: 0s;
 }
 
-.project-card:nth-child(2) {
+.project-card:nth-child(8n+2) {
     animation-delay: 0.1s;
 }
 
-.project-card:nth-child(3) {
+.project-card:nth-child(8n+3) {
     animation-delay: 0.2s;
 }
 
-.project-card:nth-child(4) {
+.project-card:nth-child(8n+4) {
     animation-delay: 0.3s;
+}
+
+.project-card:nth-child(8n+5) {
+    animation-delay: 0.4s;
+}
+
+.project-card:nth-child(8n+6) {
+    animation-delay: 0.5s;
+}
+
+.project-card:nth-child(8n+7) {
+    animation-delay: 0.6s;
+}
+
+.project-card:nth-child(8n+8) {
+    animation-delay: 0.7s;
 }
 
 .project-card:hover {
