@@ -66,6 +66,16 @@ body {
     background-color: var(--toggle-active-bg);
 }
 
+.theme-toggle.scrolled {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color: rgba(17, 17, 17, 0.9);
+    backdrop-filter: blur(4px);
+}
+
+body.light-mode .theme-toggle.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
 .theme-toggle::before {
     content: '';
     width: 16px;

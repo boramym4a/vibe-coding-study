@@ -21,6 +21,29 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleBtn.classList.remove('active');
     }
 
+    let lastScrollY = 0;
+    let ticking = false;
+
+    window.addEventListener('scroll', function() {
+        lastScrollY = window.scrollY;
+
+        if (!ticking) {
+            window.requestAnimationFrame(updateScrollClass);
+            ticking = true;
+        }
+    });
+
+    function updateScrollClass() {
+        if (toggleBtn) {
+            if (lastScrollY > 50) {
+                toggleBtn.classList.add('scrolled');
+            } else {
+                toggleBtn.classList.remove('scrolled');
+            }
+        }
+        ticking = false;
+    }
+
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.addEventListener('animationend', function() {
