@@ -1,22 +1,195 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibe Studio - 디자인과 기술의 융합</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <button class="theme-toggle" onclick="toggleTheme()"></button>
-    <h1>디자인과 기술로 브랜드를 만듭니다</h1>
-    <p>창의적인 아이디어와 최신 기술을 결합하여 당신의 브랜드를 세상에 알립니다.</p>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examples / Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./figma-home-page.css" />
+  </head>
+  <body>
+    <div class="page" data-node-id="1:2334">
+      <header class="header" data-node-id="1:2335">
+        <div class="header__inner">
+          <div class="logo" aria-label="Logo">
+            <svg width="24" height="35" viewBox="0 0 24 35" fill="none" aria-hidden="true">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0Z"
+                fill="#1E1E1E"
+              />
+              <path d="M12 28V35" stroke="#1E1E1E" stroke-width="4" />
+            </svg>
+          </div>
 
-    <button class="hamburger" id="hamburger-btn">☰</button>
-    <div class="nav-container" id="nav-menu">
-        <a href="about.html">회사 소개</a>
-        <a href="works.html">Our Works</a>
-        <a href="contact.html">Contact</a>
+          <nav class="nav-pills" aria-label="Primary">
+            <a href="#">Products</a>
+            <a href="#">Solutions</a>
+            <a href="#">Community</a>
+            <a href="#">Resources</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+            <a href="#">Link</a>
+          </nav>
+
+          <div class="header-auth">
+            <button class="btn btn-neutral" type="button">Sign in</button>
+            <button class="btn btn-primary" type="button">Register</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero" data-node-id="1:2336">
+        <div class="hero__content">
+          <h1>Title</h1>
+          <p class="hero__subtitle">Subtitle</p>
+          <div class="hero__actions">
+            <button class="btn btn-neutral btn-lg" type="button">Button</button>
+            <button class="btn btn-primary btn-lg" type="button">Button</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="media-section" data-node-id="1:2337" aria-label="Section">
+        <div class="media-section__placeholder">
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+            <rect x="8" y="8" width="104" height="104" rx="8" stroke="#B3B3B3" stroke-width="4" />
+            <circle cx="38" cy="38" r="10" fill="#B3B3B3" />
+            <path d="M16 92L44 64L62 82L88 56L104 72" stroke="#B3B3B3" stroke-width="4" />
+          </svg>
+        </div>
+      </section>
+
+      <section class="testimonials" data-node-id="1:2338">
+        <div class="testimonials__inner">
+          <div class="section-heading">
+            <h2>Heading</h2>
+            <p>Subheading</p>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <h3>“Quote”</h3>
+              <div class="avatar-block">
+                <img src="https://i.pravatar.cc/80?img=47" alt="" />
+                <div>
+                  <strong>Title</strong>
+                  <span>Description</span>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <h3>“Quote”</h3>
+              <div class="avatar-block">
+                <img src="https://i.pravatar.cc/80?img=47" alt="" />
+                <div>
+                  <strong>Title</strong>
+                  <span>Description</span>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <h3>“Quote”</h3>
+              <div class="avatar-block">
+                <img src="https://i.pravatar.cc/80?img=47" alt="" />
+                <div>
+                  <strong>Title</strong>
+                  <span>Description</span>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <h3>“Quote”</h3>
+              <div class="avatar-block">
+                <img src="https://i.pravatar.cc/80?img=47" alt="" />
+                <div>
+                  <strong>Title</strong>
+                  <span>Description</span>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <h3>“Quote”</h3>
+              <div class="avatar-block">
+                <img src="https://i.pravatar.cc/80?img=47" alt="" />
+                <div>
+                  <strong>Title</strong>
+                  <span>Description</span>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <h3>“Quote”</h3>
+              <div class="avatar-block">
+                <img src="https://i.pravatar.cc/80?img=47" alt="" />
+                <div>
+                  <strong>Title</strong>
+                  <span>Description</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" data-node-id="1:2339">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="logo" aria-label="Logo">
+              <svg width="24" height="35" viewBox="0 0 24 35" fill="none" aria-hidden="true">
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0Z"
+                  fill="#1E1E1E"
+                />
+                <path d="M12 28V35" stroke="#1E1E1E" stroke-width="4" />
+              </svg>
+            </div>
+            <div class="social-links" aria-label="Social links">
+              <a href="#" aria-label="X">X</a>
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="YouTube">YT</a>
+              <a href="#" aria-label="LinkedIn">IN</a>
+            </div>
+          </div>
+
+          <div class="footer__columns">
+            <div class="footer__column">
+              <strong>Use cases</strong>
+              <a href="#">UI design</a>
+              <a href="#">UX design</a>
+              <a href="#">Wireframing</a>
+              <a href="#">Diagramming</a>
+              <a href="#">Brainstorming</a>
+              <a href="#">Online whiteboard</a>
+              <a href="#">Team collaboration</a>
+            </div>
+            <div class="footer__column">
+              <strong>Explore</strong>
+              <a href="#">Design</a>
+              <a href="#">Prototyping</a>
+              <a href="#">Development features</a>
+              <a href="#">Design systems</a>
+              <a href="#">Collaboration features</a>
+              <a href="#">Design process</a>
+              <a href="#">FigJam</a>
+            </div>
+            <div class="footer__column">
+              <strong>Resources</strong>
+              <a href="#">Blog</a>
+              <a href="#">Best practices</a>
+              <a href="#">Colors</a>
+              <a href="#">Color wheel</a>
+              <a href="#">Support</a>
+              <a href="#">Developers</a>
+              <a href="#">Resource library</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
