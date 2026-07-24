@@ -4,7 +4,7 @@
   --sidebar-width: var(--sidebar-open);
   --content-pad-x: 142px;
   --content-pad-x-collapsed: 120px;
-  --hero-max: 975px;
+  --hero-max: 965px;
   --agents-max: 965px;
   --project-width: 470px;
   --brief-width: 471px;
@@ -354,7 +354,7 @@ button {
 .hero {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero-copy {
