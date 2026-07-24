@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -40,35 +46,37 @@
             <section>
               <p class="menu-section-title">Main</p>
               <a class="menu-item active" href="#">
-                <span class="menu-icon">⌂</span>
+                <span class="menu-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21v-8h6v8"/></svg>
+                </span>
                 <span class="menu-label">홈</span>
               </a>
             </section>
 
             <section>
               <p class="menu-section-title">AI Service</p>
-              <a class="menu-item" href="#"><span class="menu-icon">🔍</span><span class="menu-label">사내 지식검색</span></a>
-              <a class="menu-item" href="#"><span class="menu-icon">⚖</span><span class="menu-label">법규 적합성 검토</span></a>
-              <a class="menu-item" href="#"><span class="menu-icon">🛡</span><span class="menu-label">컴플라이언스 검토</span></a>
-              <a class="menu-item" href="#"><span class="menu-icon">📝</span><span class="menu-label">문서 작성 AI</span></a>
-              <a class="menu-item" href="#"><span class="menu-icon">🌐</span><span class="menu-label">외부 공개정보 검색</span></a>
-              <a class="menu-item" href="#"><span class="menu-icon">🤖</span><span class="menu-label">Agent Builder</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span><span class="menu-label">사내 지식검색</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><span class="menu-label">법규 적합성 검토</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3.1 7.3 7 8.5 3.9-1.2 7-4 7-8.5V6z"/><path d="m9.5 12 2 2 3.5-4"/></svg></span><span class="menu-label">컴플라이언스 검토</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8.5 13h7M8.5 17h7"/></svg></span><span class="menu-label">문서 작성 AI</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.5 3.8 5.6 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.6-3.8-9S9.5 5.5 12 3z"/></svg></span><span class="menu-label">외부 공개정보 검색</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4M8.5 4h7"/><path d="M2 14h2M20 14h2"/><path d="M9 13.5v1.5M15 13.5v1.5"/></svg></span><span class="menu-label">Agent Builder</span></a>
             </section>
 
             <section>
               <p class="menu-section-title">Workspace</p>
               <a class="menu-item" href="#">
-                <span class="menu-icon">📁</span>
+                <span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.5l-2-2.5H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/></svg></span>
                 <span class="menu-label">내 프로젝트</span>
                 <span class="menu-badge">100</span>
               </a>
-              <a class="menu-item" href="#"><span class="menu-icon">★</span><span class="menu-label">즐겨찾는 Agent</span></a>
-              <a class="menu-item" href="#"><span class="menu-icon">🕘</span><span class="menu-label">최근 문서</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6-5.4-2.8-5.4 2.8 1-6L3.2 9.4l6.1-.9z"/></svg></span><span class="menu-label">즐겨찾는 Agent</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="menu-label">최근 문서</span></a>
             </section>
 
             <section>
               <p class="menu-section-title">Admin</p>
-              <a class="menu-item" href="#"><span class="menu-icon">⚙</span><span class="menu-label">관리자 콘솔</span></a>
+              <a class="menu-item" href="#"><span class="menu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 0 1-4 0v-.2a1.7 1.7 0 0 0-2.9-1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0-1.2-2.9H3a2 2 0 0 1 0-4h.2a1.7 1.7 0 0 0 1.2-2.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H10a1.7 1.7 0 0 0 1-1.6V3a2 2 0 0 1 4 0v.2a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V10a1.7 1.7 0 0 0 1.6 1H21a2 2 0 0 1 0 4h-.2a1.7 1.7 0 0 0-1.4.9z"/></svg></span><span class="menu-label">관리자 콘솔</span></a>
             </section>
           </nav>
         </div>
@@ -89,25 +97,33 @@
         <header class="gnb">
           <label class="search-box">
             <span>사내 문서, 이메일, 워크스페이스 검색</span>
-            <span aria-hidden="true">🔍</span>
+            <svg class="search-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
           </label>
           <div class="gnb-right">
             <span class="gnb-date">2026.7.6(월) 오전 9:20</span>
             <div class="gnb-icons" aria-label="알림">
-              <span>💬</span>
-              <span>🔔</span>
-              <span>ⓘ</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
             </div>
           </div>
         </header>
 
         <main class="content">
-          <div class="bg-blur" aria-hidden="true"></div>
+          <div class="bg-blur" aria-hidden="true">
+            <span class="blob blob-top"></span>
+            <span class="blob blob-right"></span>
+          </div>
           <div class="content-inner">
             <section class="hero">
               <div class="hero-copy">
                 <p class="hero-greeting">안녕하세요, 정한결 책임님</p>
-                <h1 class="hero-title"><span class="spark">✦</span> 오늘 무엇을 도와드릴까요?</h1>
+                <h1 class="hero-title">
+                  <span class="spark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 1.9 6.3a2 2 0 0 0 1.3 1.3L21.5 11.5l-6.3 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-6.3a2 2 0 0 0-1.3-1.3L2.5 11.5l6.3-1.9a2 2 0 0 0 1.3-1.3z"/></svg>
+                  </span>
+                  오늘 무엇을 도와드릴까요?
+                </h1>
               </div>
 
               <div class="prompt-card">
@@ -115,7 +131,9 @@
                   <p class="prompt-placeholder">에이전트 검색 또는 “여신심사보고서 작성해줘”</p>
                   <div class="prompt-actions">
                     <div class="chips">
-                      <button class="chip-add" type="button" aria-label="추가">+</button>
+                      <button class="chip-add" type="button" aria-label="추가">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+                      </button>
                       <span class="chip">문서.docs ×</span>
                       <span class="chip">사내문서 소환 ×</span>
                       <span class="chip">외부정보 검색 ×</span>
@@ -136,7 +154,9 @@
               <div class="agent-grid">
               <article class="agent-card">
                 <div class="agent-card-top">
-                  <div class="agent-icon purple">📈</div>
+                  <div class="agent-icon purple">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16"/><path d="m7 14 3.5-3.5 3 3L21 7"/></svg>
+                  </div>
                   <span class="agent-badge rag">RAG</span>
                 </div>
                 <h3>RAG 평가 데이터셋 생성 에이전트</h3>
@@ -144,7 +164,9 @@
               </article>
               <article class="agent-card">
                 <div class="agent-card-top">
-                  <div class="agent-icon orange">✎</div>
+                  <div class="agent-icon orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+                  </div>
                   <span class="agent-badge template">템플릿</span>
                 </div>
                 <h3>문서 교정·리라이팅 에이전트</h3>
@@ -152,7 +174,9 @@
               </article>
               <article class="agent-card">
                 <div class="agent-card-top">
-                  <div class="agent-icon purple">💬</div>
+                  <div class="agent-icon purple">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  </div>
                   <span class="agent-badge rag">RAG</span>
                 </div>
                 <h3>사내 문서 RAG 챗봇</h3>
@@ -160,7 +184,9 @@
               </article>
               <article class="agent-card">
                 <div class="agent-card-top">
-                  <div class="agent-icon orange">📋</div>
+                  <div class="agent-icon orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h4"/></svg>
+                  </div>
                   <span class="agent-badge template">템플릿</span>
                 </div>
                 <h3>회의록 요약·정리 에이전트</h3>
@@ -172,8 +198,11 @@
             <div class="bottom-grid">
               <section>
                 <div class="panel-head">
-                  <h2>내 프로젝트 ▾</h2>
-                  <span>▾</span>
+                  <h2 class="panel-title">
+                    내 프로젝트
+                    <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+                  </h2>
+                  <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
                 </div>
                 <div class="panel project-list">
                   <div class="project-row">
@@ -184,7 +213,7 @@
                     </div>
                     <div class="project-left">
                       <span class="status-badge green">운영중</span>
-                      <span>🔒</span>
+                      <span class="row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
                     </div>
                   </div>
                   <div class="project-row">
@@ -195,7 +224,7 @@
                     </div>
                     <div class="project-left">
                       <span class="status-badge blue">팀 프로젝트</span>
-                      <span>👥</span>
+                      <span class="row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 20v-1.5a3.5 3.5 0 0 0-3.5-3.5h-4A3.5 3.5 0 0 0 5 18.5V20"/><circle cx="10.5" cy="8" r="3.5"/><path d="M18.5 20v-1.2a3.2 3.2 0 0 0-2.4-3.1"/><path d="M14.5 4.6a3.2 3.2 0 0 1 0 6.2"/></svg></span>
                     </div>
                   </div>
                   <div class="project-row">
@@ -203,7 +232,7 @@
                       <span class="project-dot" style="background:#b7eeb1"></span>
                       <span class="project-name">경쟁사 조사</span>
                     </div>
-                    <span>🔒</span>
+                    <span class="row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
                   </div>
                   <div class="project-row">
                     <div class="project-left">
@@ -211,22 +240,22 @@
                       <span class="project-name">보고서관련</span>
                       <span class="count-badge">14</span>
                     </div>
-                    <span>🔒</span>
+                    <span class="row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
                   </div>
                   <div class="project-row">
                     <div class="project-left">
                       <span class="project-dot" style="background:#a9d6da"></span>
                       <span class="project-name">리서치</span>
                     </div>
-                    <span>🔒</span>
+                    <span class="row-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
                   </div>
                 </div>
               </section>
 
               <section>
                 <div class="panel-head">
-                  <h2>오늘의 사내 브리핑</h2>
-                  <span>▾</span>
+                  <h2 class="panel-title">오늘의 사내 브리핑</h2>
+                  <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
                 </div>
                 <div class="panel brief-list">
                   <div class="brief-row">
