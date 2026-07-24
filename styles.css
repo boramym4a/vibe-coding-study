@@ -493,7 +493,7 @@ button {
 }
 
 .agents-block {
-  margin-top: 4px;
+  margin-top: 32px;
   max-width: var(--agents-max);
 }
 
@@ -729,6 +729,93 @@ button {
   font-weight: 500;
   color: var(--text-muted);
   letter-spacing: -0.13px;
+}
+
+/* ===== Icons ===== */
+.menu-icon svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.search-ic {
+  width: 16px;
+  height: 16px;
+  color: var(--text-soft);
+  flex-shrink: 0;
+}
+
+.gnb-icons svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.agent-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.chip-add svg {
+  width: 14px;
+  height: 14px;
+}
+
+.row-icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-soft);
+}
+
+.row-icon svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.panel-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chev {
+  width: 18px;
+  height: 18px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.hero-title .spark svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+}
+
+/* ===== Background blobs (match Figma) ===== */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.blob-top {
+  width: 663px;
+  height: 442px;
+  top: -260px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(171, 206, 247, 0.6), transparent 70%);
+}
+
+.blob-right {
+  width: 421px;
+  height: 418px;
+  top: -166px;
+  right: -40px;
+  background: radial-gradient(circle, rgba(171, 206, 247, 0.7), transparent 70%);
 }
 
 @media (max-width: 1440px) {
